@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Leonardo | Portfólio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0b0f19;
+      --card: #12182b;
+      --primary: #5eead4;
+      --secondary: #38bdf8;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Inter', sans-serif; background: linear-gradient(120deg, #020617, #0b0f19); color: var(--text); line-height: 1.6; }
+    header { position: fixed; top: 0; width: 100%; background: rgba(11,15,25,0.8); backdrop-filter: blur(10px); z-index: 1000; }
+    nav { max-width: 1100px; margin: auto; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; }
+    nav a { color: var(--text); margin-left: 1.2rem; text-decoration: none; font-size: 0.9rem; transition: color 0.3s; }
+    nav a:hover { color: var(--primary); }
+    section { max-width: 1100px; margin: auto; padding: 6rem 2rem 4rem; }
+    .hero { min-height: 100vh; display: flex; flex-direction: column; justify-content: center; }
+    .hero h1 { font-size: 3rem; background: linear-gradient(90deg, var(--primary), var(--secondary)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .hero p { max-width: 600px; margin-top: 1rem; color: var(--muted); }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 2rem; }
+    .card { background: var(--card); padding: 1.5rem; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.3); transition: transform 0.3s, box-shadow 0.3s; }
+    .card:hover { transform: translateY(-6px); box-shadow: 0 20px 40px rgba(0,0,0,0.5); }
+    .tag { display: inline-block; background: rgba(94,234,212,0.1); color: var(--primary); padding: 0.3rem 0.6rem; border-radius: 999px; font-size: 0.75rem; margin: 0.2rem; }
+    .hidden { display: none; }
+    button.show-more { margin-top: 1rem; background: linear-gradient(90deg, var(--primary), var(--secondary)); color: #020617; padding: 0.6rem 1.2rem; border: none; border-radius: 999px; font-weight: 600; cursor: pointer; }
+    button.show-more:hover { opacity: 0.9; }
+    form input, form textarea { width: 100%; padding: 0.8rem; border-radius: 8px; border: none; margin-bottom: 1rem; background: #020617; color: var(--text); }
+    form button { background: linear-gradient(90deg, var(--primary), var(--secondary)); color: #020617; padding: 0.8rem 1.5rem; border: none; border-radius: 999px; font-weight: 600; cursor: pointer; }
+    form button:hover { opacity: 0.9; }
+  </style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <strong>Leonardo</strong>
+    <div>
+      <a href="#home">Home</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#experiencia">Experiência</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#certificacoes">Certificações</a>
+      <a href="#contato">Contato</a>
+    </div>
+  </nav>
+</header>
+
+<section id="home" class="hero">
+  <h1>Analista de Dados & Tecnologia</h1>
+  <p>Portfólio profissional focado em dados, automação, cloud e soluções de negócio. Transformo dados em decisões estratégicas.</p>
+</section>
+
+<section id="sobre">
+  <h2>Sobre mim</h2>
+  <h3>Quem sou eu?</h3>
+  <p>Sou Leonardo Binder, apaixonado por tecnologia, dados e soluções digitais. Meu foco é transformar informações em resultados e criar ferramentas que facilitem decisões e otimizem processos. Trabalho com análise de dados, desenvolvimento e automação, sempre buscando aprender mais e entregar valor em cada projeto.</p>
+
+  <div style="margin-top:2rem; display:grid; grid-template-columns: 180px 1fr; gap:2rem; align-items:center">
+    <div style="position:relative">
+      <img src="sua-foto.jpg" alt="Foto de Leonardo Binder" style="width:180px; height:180px; object-fit:cover; border-radius:24px; box-shadow:0 20px 40px rgba(0,0,0,0.5)">
+      <div style="position:absolute; inset:0; border-radius:24px; background:linear-gradient(135deg, rgba(94,234,212,0.15), rgba(56,189,248,0.15));"></div>
+    </div>
+
+    <div>
+      <h3>Minha Trajetória</h3>
+      <p>Minha jornada na tecnologia começou com a vontade de entender como dados, sistemas e automações podem facilitar a vida das pessoas e melhorar resultados. Ao longo do tempo, desenvolvi habilidades em análise de dados, visualização, desenvolvimento e soluções digitais, sempre buscando aprender, evoluir e aplicar conhecimento na prática. Hoje, sigo construindo minha carreira com foco em criar soluções simples, eficientes e inteligentes, transformando dados em decisões e ideias em resultados.</p>
+    </div>
+  </div>
+
+  <div style="margin-top:1.5rem">
+    <h4>Minha Stack</h4>
+    <span class="tag">Power BI</span>
+    <span class="tag">SQL</span>
+    <span class="tag">Python</span>
+    <span class="tag">Power Platform</span>
+    <span class="tag">Cloud</span>
+  </div>
+
+  <div style="margin-top:1rem">
+    <h4>Outros Conhecimentos</h4>
+    <span class="tag">Banco de Dados</span>
+    <span class="tag">Automação</span>
+    <span class="tag">APIs</span>
+    <span class="tag">Git & GitHub</span>
+  </div>
+</section>
+
+<section id="experiencia">
+  <h2>Experiências Profissionais</h2>
+  <a href="curriculo-leonardo.pdf" download style="display:inline-block; margin-top:1rem; background:linear-gradient(90deg, var(--primary), var(--secondary)); color:#020617; padding:0.6rem 1.2rem; border-radius:999px; font-weight:600; text-decoration:none">⬇️ Baixar Currículo</a>
+  <div class="grid">
+
+    <div class="card">
+      <h3>Analista de Negócios Jr — ZS Urbanismo</h3>
+      <p><strong>Jan/2026 – Atual</strong></p>
+      <p>Atuação com análise de dados, automação de processos, suporte a decisões estratégicas e desenvolvimento de soluções orientadas a dados para o negócio.</p>
+      <div style="margin-top:0.8rem">
+        <span class="tag">Power BI</span>
+        <span class="tag">SQL</span>
+        <span class="tag">Automação</span>
+        <span class="tag">Análise de Dados</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>Estágio em Sistemas — ISA ENERGIA</h3>
+      <p><strong>Jan/2025 – Jan/2026</strong></p>
+      <p>Desenvolvimento de dashboards integrados para monitoramento e análise de KPIs, com integração a sistemas SAP. Desenvolvimento de soluções com Power Platform e automação de processos.</p>
+      <div style="margin-top:0.8rem">
+        <span class="tag">Power BI</span>
+        <span class="tag">Power Apps</span>
+        <span class="tag">Power Automate</span>
+        <span class="tag">SharePoint</span>
+        <span class="tag">Automação</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>Estágio em TI — IP4Y Instituição de Pagamento</h3>
+      <p><strong>Março/2024 – Nov/2026</strong></p>
+      <p>Atuação em desenvolvimento de sistemas, suporte em infraestrutura, integração de sistemas, APIs e rotinas de dados em ambiente corporativo.</p>
+      <div style="margin-top:0.8rem">
+        <span class="tag">SQL</span>
+        <span class="tag">Python</span>
+        <span class="tag">APIs</span>
+        <span class="tag">Active Directory</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="projetos">
+  <h2>Projetos</h2>
+  <div class="grid" id="projetos-grid">
+
+    <div class="card">
+      <img src="Analise_Policia_NY.jpg" alt="Análise Polícia NY" style="width:100%; border-radius:12px; margin-bottom:1rem">
+      <h3>Análise Polícia NY</h3>
+      <p>Dashboard no Power BI para análise de dados da polícia de NY. Auxilia na visualização de padrões criminais e estatísticas.</p>
+      <a href="https://github.com/seuusuario/Analise_Policia_NY" target="_blank" style="color:var(--primary)">Ver repositório →</a>
+    </div>
+
+    <div class="card">
+      <img src="Nba_analise.jpg" alt="NBA Análise" style="width:100%; border-radius:12px; margin-bottom:1rem">
+      <h3>NBA Análise</h3>
+      <p>Projeto em Python para analisar a probabilidade de resultados de jogos de basquete. Ajuda a prever estratégias analíticas.</p>
+      <a href="https://github.com/seuusuario/Nba_analise" target="_blank" style="color:var(--primary)">Ver repositório →</a>
+    </div>
+
+    <div class="card">
+      <img src="Dashboard_Analise_Uber.jpg" alt="Dashboard Análise Uber" style="width:100%; border-radius:12px; margin-bottom:1rem">
+      <h3>Dashboard Análise Uber</h3>
+      <p>Dashboard no Power BI para análise de dados de corridas Uber. Facilita acompanhamento de métricas e tendências operacionais.</p>
+      <a href="https://github.com/seuusuario/Dashboard_Analise_Uber" target="_blank" style="color:var(--primary)">Ver repositório →</a>
+    </div>
+
+    <div class="card">
+      <img src="Sistema.jpg" alt="Sistema de Controle de Estoque" style="width:100%; border-radius:12px; margin-bottom:1rem">
+      <h3>Sistema</h3>
+      <p>Sistema de controle de estoque em Python. Auxilia no gerenciamento de inventário e operações de estoque.</p>
+      <a href="https://github.com/seuusuario/Sistema" target="_blank" style="color:var(--primary)">Ver repositório →</a>
+    </div>
+
+    <div class="card hidden">
+      <img src="Automacao_PDF.jpg" alt="Automação PDF" style="width:100%; border-radius:12px; margin-bottom:1rem">
+      <h3>Automação PDF</h3>
+      <p>Projeto em Python que lê PDFs, converte em CSV e envia direto para SQL. Automatiza processamento de dados e integração.</p>
+      <a href="https://github.com/seuusuario/Automacao_PDF" target="_blank" style="color:var(--primary)">Ver repositório →</a>
+    </div>
+
+  </div>
+  <button class="show-more" onclick="verMaisProjetos()">Ver mais projetos</button>
+</section>
+
+<section id="certificacoes">
+  <h2>Licenças e Certificações</h2>
+  <div class="grid">
+
+    <div class="card">
+      <h3>Google Data Analytics Professional Certificate</h3>
+      <p style="color: var(--muted)">Competências desenvolvidas:</p>
+      <div style="margin-top:0.8rem">
+        <span class="tag">SQL</span>
+        <span class="tag">Análise de Dados</span>
+        <span class="tag">Limpeza de Dados</span>
+        <span class="tag">Agregação de Dados</span>
+        <span class="tag">ETL</span>
+        <span class="tag">Banco de Dados</span>
+        <span class="tag">Resolução de Problemas</span>
+        <span class="tag">Pensamento Estruturado</span>
+      </div>
+      <a href="https://coursera.org/share/a5c6e8f5709f58eba5bb73ba23e83640" target="_blank" style="display:inline-block; margin-top:1rem; color: var(--primary)">Ver certificação →</a>
+    </div>
+
+    <div class="card">
+      <h3>Databricks Fundamentals Accreditation</h3>
+      <p style="color: var(--muted)">Competências desenvolvidas:</p>
+      <div style="margin-top:0.8rem">
+        <span class="tag">Databricks</span>
+        <span class="tag">Data Engineering</span>
+        <span class="tag">Análise de Dados</span>
+        <span class="tag">Big Data</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>Microsoft Power BI para Business Intelligence e Data Science</h3>
+      <p style="color: var(--muted)">Competências desenvolvidas:</p>
+      <div style="margin-top:0.8rem">
+        <span class="tag">Power BI</span>
+        <span class="tag">Power Query</span>
+        <span class="tag">SQL</span>
+        <span class="tag">Machine Learning</span>
+        <span class="tag">Estatística</span>
+        <span class="tag">Modelagem de Dados</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="contato">
+  <h2>Contato</h2>
+  <form onsubmit="enviarMensagem(event)">
+    <input type="text" placeholder="Seu nome" required />
+    <input type="email" placeholder="Seu email" required />
+    <textarea rows="4" placeholder="Mensagem"></textarea>
+    <button type="submit">Enviar</button>
+  </form>
+</section>
+
+<footer>
+  © 2026 Leonardo • Portfólio Profissional
+</footer>
+
+<script>
+  function verMaisProjetos() {
+    document.querySelectorAll('.card.hidden').forEach(card => card.classList.remove('hidden'));
+    document.querySelector('.show-more').style.display = 'none';
+  }
+  function enviarMensagem(e) { e.preventDefault(); alert('Mensagem enviada com sucesso!'); }
+</script>
+
+</body>
+</html>
+
