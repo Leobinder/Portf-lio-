@@ -15,9 +15,21 @@
       --muted: #9ca3af;
     }
 
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: 'Inter', sans-serif; background: linear-gradient(120deg, #020617, #0b0f19); color: var(--text); line-height: 1.6; }
-    header { position: fixed; top: 0; width: 100%; background: rgba(11,15,25,0.8); backdrop-filter: blur(10px); z-index: 1000; }
+ body {
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(270deg, #020617, #0b0f19, #0a1a2a, #020617);
+  background-size: 800% 800%;
+  color: var(--text);
+  line-height: 1.6;
+  animation: gradientBG 60s ease infinite; /* mais devagar */
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
     nav { max-width: 1100px; margin: auto; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; }
     nav a { color: var(--text); margin-left: 1.2rem; text-decoration: none; font-size: 0.9rem; transition: color 0.3s; }
     nav a:hover { color: var(--primary); }
@@ -39,6 +51,8 @@
 </head>
 <body>
 
+  <div id="particles-js" style="position:fixed; inset:0; z-index:-1;"></div>
+
 <header>
   <nav>
     <strong>Leonardo</strong>
@@ -54,8 +68,8 @@
 </header>
 
 <section id="home" class="hero">
-  <h1>Analista de Dados & Tecnologia</h1>
-  <p>Portfólio profissional focado em dados, automação, cloud e soluções de negócio. Transformo dados em decisões estratégicas.</p>
+<h1>Transformando dados em decisões estratégicas.</h1>
+<p>Analista de Dados & Tecnologia | Especialista em Power BI, SQL, Python, Cloud e Automação. Crio soluções inteligentes que conectam dados, negócios e inovação.</p>
 </section>
 
 <section id="sobre">
@@ -250,6 +264,40 @@
   function enviarMensagem(e) { e.preventDefault(); alert('Mensagem enviada com sucesso!'); }
 </script>
 
+<script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
+<script>
+tsParticles.load("particles-js", {
+  fpsLimit: 60,
+  background: {
+    color: "#0b0f19"
+  },
+  particles: {
+    number: { value: 50 },
+    color: { value: "#0a2239" }, // azul escuro
+    shape: { type: "circle" },
+    opacity: { value: 0.3 },
+    size: { value: { min: 1, max: 4 } },
+    move: { enable: true, speed: 0.5, direction: "none", outModes: { default: "bounce" } },
+    links: { enable: true, distance: 120, color: "#0a2239", opacity: 0.2, width: 1 }
+  },
+  interactivity: {
+    events: {
+      onHover: { enable: true, mode: "repulse" },
+      onClick: { enable: true, mode: "push" }
+    },
+    modes: {
+      repulse: { distance: 100 },
+      push: { quantity: 4 }
+    }
+  },
+  detectRetina: true
+});
+</script>
+
+
 </body>
+
 </html>
+
+
 
